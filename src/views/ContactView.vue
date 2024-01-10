@@ -16,21 +16,15 @@
             </p>
             <v-list>
               <v-list-item>
-                <v-list-item-content>
                   <v-list-item-title>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></v-list-item-title>
-                </v-list-item-content>
               </v-list-item>
 
               <v-list-item>
-                <v-list-item-content>
                   <v-list-item-title>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">Your LinkedIn Profile</a></v-list-item-title>
-                </v-list-item-content>
               </v-list-item>
 
               <v-list-item>
-                <v-list-item-content>
                   <v-list-item-title>GitHub: <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">Your GitHub Profile</a></v-list-item-title>
-                </v-list-item-content>
               </v-list-item>
             </v-list>
           </v-card-text>

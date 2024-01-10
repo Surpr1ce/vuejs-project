@@ -14,9 +14,7 @@
       <v-subheader class="subheader">Additional Details:</v-subheader>
 
       <v-list>
-        <v-list-item-group>
           <v-list-item>
-            <v-list-item-content>
               <v-list-item-title class="caption">
                 <strong>Technologies Used:</strong>
               </v-list-item-title>
@@ -25,56 +23,44 @@
                   {{ technology }}
                 </v-chip>
               </v-list-item-subtitle>
-            </v-list-item-content>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-content>
               <v-list-item-title class="caption">
                 <strong>Description:</strong>
               </v-list-item-title>
               <v-list-item-subtitle>{{ project.description }}</v-list-item-subtitle>
-            </v-list-item-content>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-content>
               <v-list-item-title class="caption">
                 <strong>GitHub Repository:</strong>
               </v-list-item-title>
               <v-list-item-subtitle>
                 <a :href="project.repoLink" target="_blank">{{ project.repoLink }}</a>
               </v-list-item-subtitle>
-            </v-list-item-content>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-content>
               <v-list-item-title class="caption">
                 <strong>Project Duration:</strong>
               </v-list-item-title>
               <v-list-item-subtitle>{{ project.duration }}</v-list-item-subtitle>
-            </v-list-item-content>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-content>
               <v-list-item-title class="caption">
                 <strong>Team Collaboration:</strong>
               </v-list-item-title>
               <v-list-item-subtitle>{{ project.teamCollaboration ? 'Yes' : 'No' }}</v-list-item-subtitle>
-            </v-list-item-content>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-content>
               <v-list-item-title class="caption">
                 <strong>Client:</strong>
               </v-list-item-title>
               <v-list-item-subtitle>{{ project.client }}</v-list-item-subtitle>
-            </v-list-item-content>
           </v-list-item>
-        </v-list-item-group>
       </v-list>
 
       <v-divider></v-divider>
