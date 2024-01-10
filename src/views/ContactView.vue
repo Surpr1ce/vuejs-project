@@ -3,12 +3,12 @@
     
     <v-row class="mb-6">
       <v-col cols="12">
-        <v-subheader class="headline">Contact Me</v-subheader>
+        <v-subheader  class="headline">Contact Me</v-subheader>
       </v-col>
     </v-row>
 
     <v-row>
-      <v-col cols="12">
+      <v-col cols="12" md="6">
         <v-card class="pa-4">
           <v-card-text>
             <p class="body-1">
@@ -36,9 +36,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-    </v-row>
 
-    <v-row>
       <v-col cols="12" md="6">
         <v-form>
           <v-text-field label="Your Name" v-model="name" outlined></v-text-field>

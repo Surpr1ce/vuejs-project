@@ -1,32 +1,16 @@
 <template>
-  <v-container>
-    
-    <v-row class="mb-6">
-      <v-col cols="12">
-        <v-subheader class="headline">Welcome to My Portfolio</v-subheader>
-      </v-col>
-    </v-row>
-
+  <v-container fluid>
     <v-row>
       <v-col cols="12">
-        <v-card class="pa-4">
-          <v-card-text>
+        <!-- Hero section with background image -->
+        <v-card class="hero-card">
+          <v-card-text class="hero-text">
+            <v-subheader class="headline">Hi, I'm [Your Name]</v-subheader>
             <p class="body-1">
-              Hi, I'm [Your Name], a passionate software engineer dedicated to crafting meaningful and innovative solutions.
+              A passionate software engineer dedicated to crafting meaningful and innovative solutions.
               Welcome to my portfolio, where I showcase my journey, skills, and projects.
             </p>
-            <p class="body-1">
-              With a background in [Your Field or Degree], I bring [X years] of experience in the world of software
-              development.
-              My expertise includes [list some key skills or technologies], and I enjoy taking on challenges that push my
-              creativity and problem-solving abilities.
-            </p>
-            <p class="body-1">
-              In this portfolio, you'll find information about my projects, experiences, and the technologies I love to work
-              with.
-              Whether you're here for inspiration, collaboration, or just to explore, I hope you find something that resonates
-              with you.
-            </p>
+            <v-btn color="primary" @click="navigateToPortfolio">Portfolio</v-btn>
           </v-card-text>
         </v-card>
       </v-col>
@@ -35,6 +19,22 @@
 </template>
 
 <style scoped>
+/* Styling for the hero card */
+.hero-card {
+  background-image: url("@/images/hero.jpg"); /* Replace with the path to your hero image */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Text color for better visibility on the background */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  display: flex;
+  align-items: center; /* Vertically center the content */
+}
+
+/* Styling for the hero text */
+.hero-text {
+  text-align: center;
+}
+
 .headline {
   font-size: 24px;
   font-weight: bold;
@@ -44,5 +44,20 @@
 .body-1 {
   font-size: 16px;
   line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.v-btn {
+  text-transform: none;
 }
 </style>
+
+<script>
+export default {
+  methods: {
+    navigateToPortfolio() {
+      this.$router.push('/projects');
+    },
+  },
+};
+</script>
