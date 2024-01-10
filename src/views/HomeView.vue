@@ -2,7 +2,6 @@
   <v-container fluid>
     <v-row>
       <v-col cols="12">
-        <!-- Hero section with background image -->
         <v-card class="hero-card">
           <v-card-text class="hero-text">
             <v-subheader class="headline">Hi, I'm [Your Name]</v-subheader>
@@ -18,19 +17,27 @@
   </v-container>
 </template>
 
+<script>
+export default {
+  methods: {
+    navigateToPortfolio() {
+      this.$router.push('/projects');
+    },
+  },
+};
+</script>
+
 <style scoped>
-/* Styling for the hero card */
 .hero-card {
-  background-image: url("@/images/hero.jpg"); /* Replace with the path to your hero image */
+  background-image: url("@/images/hero.jpg"); 
   background-size: cover;
   background-position: center;
-  color: white; /* Text color for better visibility on the background */
-  height: 100vh; /* Set the height to 100% of the viewport height */
+  color: white; 
+  height: 100vh; 
   display: flex;
-  align-items: center; /* Vertically center the content */
+  align-items: center; 
 }
 
-/* Styling for the hero text */
 .hero-text {
   text-align: center;
 }
@@ -51,13 +58,3 @@
   text-transform: none;
 }
 </style>
-
-<script>
-export default {
-  methods: {
-    navigateToPortfolio() {
-      this.$router.push('/projects');
-    },
-  },
-};
-</script>

@@ -6,7 +6,6 @@
     <router-link to="/about">About</router-link>
     <router-link to="/contact">Contact</router-link>
     <v-toolbar-title class="navbar-brand">Software Engineer Portfolio</v-toolbar-title>
-    
   </v-app-bar>
 </template>
 
